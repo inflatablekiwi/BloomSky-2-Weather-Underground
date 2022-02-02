@@ -8,7 +8,7 @@
 #    like sN-vtc_XXXXXXXXXXXXXXXXXXXXd8qtg== (not a real key)
 # 2. A Weather Underground Account and Private Weather Station configured, and the WU PWS ID and Key
 #    See https://www.wunderground.com/member/devices.
-#    Station ID looks like KUTPARKC238, and Key looks KhExz5qS (not a real key)
+#    Station ID looks like KUTXXXXXX, and Key looks KhExz5qS (not a real key)
 # 3. Configuration below to be updated within
 # 4. A task scheduler / cron job to run this script every X minutes (I do 5 and use Windows Task Scheduler in the background 
 
