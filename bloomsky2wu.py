@@ -46,7 +46,7 @@ humidity_str = str(sky_data['Humidity'])
 temp_str = str(sky_data['Temperature'])
 pressure_str = str(sky_data['Pressure'])
 
-#If there is a Storm device then get data from the Strom section of the JSON
+#If there is a Storm device then get data from the Storm section of the JSON
 if own_a_storm == True:
     storm_data = (bloomsky_jsondata[0]['Storm'])
     wind_sustained_str = str(storm_data['SustainedWindSpeed'])
@@ -85,7 +85,7 @@ if own_a_storm == True:
         wind_dir_todegrees = "0"
 
 
-#Now from a connection with Weather Underground and upload the data
+# Now form a connection with Weather Underground and upload the data
 
 WUcreds = "ID=" + WU_station_id + "&PASSWORD="+ WU_station_key
 date_str = "&dateutc=now"
@@ -104,7 +104,7 @@ if own_a_storm == True:
         "&winddir=" + wind_dir_todegrees +
         "&UV" + uv_index_str +
         "&dailyrainin" + rain_daily_str +
-       # "&rainin" + rain_rate_str +  commenting out as BloomSky does rate per 10 minutes and WU does 60 minutes....ugh
+       # "&rainin" + rain_rate_str +  commenting out as BloomSky does rate per 10 minutes and WU does 60 minutes..I mean I could have multipled by 6 but.....ugh
         action_str)
 else:
     WU_upload_str = (
